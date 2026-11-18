@@ -1,8 +1,8 @@
 # SlopTest
 
-Six free tests for checking a piece of writing for real argument, filler, story, facts that hold up, and whether any of it is creative. You run them yourself in the AI tool you already use. Nothing you paste is sent to us.
+Six free tests for checking a piece of writing for real argument, filler, story, facts that hold up, and whether any of it is creative. Paste your text on the page and it builds the prompt for you; you send it to the AI tool you already use. The page itself sends nothing to us.
 
-Version 3.2, 18 November 2026. The whole tool is one file, `index.html`, so its source is the page itself. It loads nothing from other websites and sets no cookies.
+Version 3.3 (beta), 18 November 2026. Feedback welcome: SlopTestFeedback@o4m.ai. New: a paste box that builds ready-to-send prompts, a one-prompt Quick check (cannot award the top label) and a guided Full audit, with Copy and Open buttons, and an optional box for your own standard (company, teacher, expert or personal voice) that can only add checks or lower a score. The Open buttons put your text inside a link to the tool you pick, so it can appear in browser history; Copy does not. The whole tool is one file, `index.html`, so its source is the page itself. It loads nothing from other websites and sets no cookies.
 
 Run order: Exhibit A (blueprint), C (fact check, needs web access), D (probable-path test), E (craft gates), then B (judge, in a fresh chat, ideally a different AI vendor from the one that wrote the piece), then F (three human readers).
 

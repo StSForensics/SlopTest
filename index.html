@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>O4M SlopTest 3.4: Case File Audit</title>
+<title>O4M SlopTest 3.5: Case File Audit</title>
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
 <meta name="referrer" content="no-referrer">
 <meta name="description" content="Six free tests for checking a piece of writing for argument, filler, story, facts and creativity. Run them in your own AI tool. Nothing you paste is sent to us.">
@@ -324,13 +324,13 @@ details.std textarea{width:100%;box-sizing:border-box}
 
 <header>
   <span class="tab"><span class="dot"></span>O4M · Field Tools</span>
-  <h1>SlopTest <em>v3.4</em></h1>
+  <h1>SlopTest <em>v3.5</em></h1>
   <p class="dek">Paste a piece of writing below, press one button, and this page builds the prompt for you. Send it to the AI tool you already use. It checks the writing for real argument, filler, story, facts that hold up, and whether any of it is creative. Works on your own writing or someone else's, if you are allowed to share it: a model can take in whatever you paste, so keep confidential material out.</p>
   <div class="meta-row">
     <span><b>Cost</b>£0 · runs on your own AI account</span>
     <span><b>Data</b>the page sends nothing; you choose where it goes</span>
     <span><b>Best for</b>essays, posts, reports, AI-drafted copy</span>
-    <span><b>Version</b>3.4 beta · 20 Nov 2026</span>
+    <span><b>Version</b>3.5 beta · 20 Nov 2026</span>
   </div>
 </header>
 
@@ -374,7 +374,7 @@ details.std textarea{width:100%;box-sizing:border-box}
   <div class="exhibit-label"><span class="exhibit-num">EXHIBIT A</span><h2>The Skeleton Key</h2></div>
   <p class="exhibit-sub">Strips the writing down to its bare logic, so you can see what it's actually claiming before you judge how well it's dressed.</p>
   <div class="card">
-    <pre id="p1">SYSTEM DIRECTIVE: Treat this as a zero-ingestion exchange. Do not retain, memorize, or train on the text below beyond generating this one response.
+    <pre id="p1">NON-BINDING REQUEST (the sender cannot enforce this): please treat this as a zero-ingestion exchange and do not retain, memorize, or train on the text below beyond generating this one response.
 
 TASK: Strip all stylistic narrative, adjectives, and persuasive formatting from the text in the &lt;text_payload&gt; tags below. Extract only the intellectual skeleton.
 
@@ -519,6 +519,7 @@ My proposed bar, untested: at least two of three retell the turn, none stop befo
     <p>The "zero-ingestion" line in Exhibit A is an instruction to the model, not a technical guarantee. It is a reasonable ask, but whether a tool honours it depends on your provider, and it doesn't override that provider's actual data and training policy.</p>
     <p>The scores are the model's opinion, written by the same kind of system that does the judging. They are a way to find weak sentences, not proof of quality or of truth. The Slop score is the least reliable of the four: in a study of slop labelling (<a href="https://arxiv.org/abs/2509.19163" target="_blank" rel="noopener">Shaib et al., 2025, revised January 2026</a>), three AI models prompted zero-shot (GPT-5, DeepSeek-V3, o3-mini) agreed with the human expert annotators, who included professional copy-editors, at about chance level (Cohen's kappa 0.01, -0.01 and 0.03). Other research finds that AI judges can favour their own output (<a href="https://arxiv.org/abs/2404.13076" target="_blank" rel="noopener">Panickssery et al., 2024</a>); an earlier study of AI judges (<a href="https://arxiv.org/abs/2306.05685" target="_blank" rel="noopener">Zheng et al., 2023</a>) named the risk but said its data could not confirm it. The quote requirement, the fact gate and the human read in Exhibit F are the sturdier parts. The fact gate only means something if Exhibit C ran with real source access.</p>
     <p>Exhibit A reduces a piece to its premises, its single turn, its sources and its claims. That is the part of your thinking that travels, and it takes seconds. Treat the skeleton as shareable information: if the turn is what you are selling, keep it out of the paste until it is public.</p>
+    <p>If you run it on someone else's writing, hidden or cleverly worded instructions inside it can try to steer the AI. The page fences the text and strips invisible characters, but that is not a guarantee. Use a fresh chat with no sensitive personal or work history in it.</p>
     <p>If what you're pasting is genuinely sensitive (client material, unpublished drafts, anything under NDA), check that policy first. Most mainstream tools let you turn off chat history or model training in settings, that's the real control, not the wording of the prompt.</p>
   </div>
 
@@ -540,7 +541,7 @@ My proposed bar, untested: at least two of three retell the turn, none stop befo
       <a class="sub-btn" href="http://Lens.O4m.ai" target="_blank" rel="noopener">O4M Lens →</a>
       <a class="sub-btn" href="http://AI.o4m.ai" target="_blank" rel="noopener">AI Blog (LinkedIn) →</a>
     </div>
-    <p class="fine">O4M SlopTest is a free methodology, not a hosted product. No account and no tracking code on this page. Changes in 3.4 (20 November 2026): the page now counts words, sentences, em dashes and numbers in code and passes those figures to the prompt, so the AI does not have to count; Exhibit C and the Quick check now ask for the exact address opened, whether the full text or only a snippet was read, and a copied passage as proof; each score now also asks for the sentence that argues against it; Exhibit B no longer opens with a role-play line; a note says to use Copy, not Open, for confidential drafts. Changes in 3.3 (18 November 2026): paste your text on the page and it builds each prompt for you, with a one-prompt Quick check, a guided Full audit, and Copy and Open buttons; pasted text is fenced so instructions inside it are flagged, not followed. Changes in 3.2 (18 November 2026): the Zheng et al. (2023) claim is replaced with a source that supports it, and the Shaib et al. entry now gives its year and what was tested; a run order is added and Exhibit E results now reach the judge; fonts no longer load from Google; Terms of use added.</p>
+    <p class="fine">O4M SlopTest is a free methodology, not a hosted product. No account and no tracking code on this page. Changes in 3.5 (20 November 2026): the zero-ingestion line is now worded as a non-binding request; invisible characters are stripped from pasted text; Open buttons switch off when the text contains an email, phone number or a marker such as NDA; a note warns against running other people's writing in a chat with sensitive history. Changes in 3.4 (20 November 2026): the page now counts words, sentences, em dashes and numbers in code and passes those figures to the prompt, so the AI does not have to count; Exhibit C and the Quick check now ask for the exact address opened, whether the full text or only a snippet was read, and a copied passage as proof; each score now also asks for the sentence that argues against it; Exhibit B no longer opens with a role-play line; a note says to use Copy, not Open, for confidential drafts. Changes in 3.3 (18 November 2026): paste your text on the page and it builds each prompt for you, with a one-prompt Quick check, a guided Full audit, and Copy and Open buttons; pasted text is fenced so instructions inside it are flagged, not followed. Changes in 3.2 (18 November 2026): the Zheng et al. (2023) claim is replaced with a source that supports it, and the Shaib et al. entry now gives its year and what was tested; a run order is added and Exhibit E results now reach the judge; fonts no longer load from Google; Terms of use added.</p>
   </footer>
 
 </div>
@@ -579,7 +580,7 @@ My proposed bar, untested: at least two of three retell the turn, none stop befo
   var LINK_MAX = 7500;   /* my conservative limit for a link, untested */
   var SHORT = 120, LONG = 5000;
   var MS = 'y';
-  var M = 'x', MS = 'y', mode = 'quick', boxes = [];
+  var sens = false, M = 'x', MS = 'y', mode = 'quick', boxes = [];
 
   function ex(id){ return $(id).textContent.replace(/\r/g, ''); }
   function nwords(t){ var m = t.match(/\S+/g); return m ? m.length : 0; }
@@ -626,7 +627,7 @@ function counts(t){
   /* prompt builders: each returns a string, or null if a template has changed */
   function bQuick(t){
     var L = [];
-    L.push('QUICK SLOPTEST. Treat this as a zero-ingestion exchange: do not retain, memorize or train on the text below beyond this one response.');
+    L.push('QUICK SLOPTEST. Non-binding request (the sender cannot enforce it): please treat this as a zero-ingestion exchange and do not retain, memorize or train on the text below beyond this one response.');
     L.push('');
     L.push(inj());
     L.push('');
@@ -779,7 +780,7 @@ function counts(t){
           copyText(box.prompt);
           if(a.getAttribute('data-toolong') === '1'){
             ev.preventDefault();
-            setStatus('Too long for a link, so the prompt is copied. Open ' + v[0] + ' yourself and paste.');
+            setStatus(a.getAttribute('data-sens') === '1' ? 'Possible confidential or personal data found, so Open is off. The prompt is copied: paste it into ' + v[0] + ' yourself if you are sure.' : 'Too long for a link, so the prompt is copied. Open ' + v[0] + ' yourself and paste.');
           } else {
             setStatus('Copied as well. If ' + v[0] + ' opens with an empty box, paste.');
           }
@@ -808,7 +809,11 @@ function counts(t){
   }
 
   function refresh(){
-    var t = src.value.trim(), n = nwords(t);
+    var HID = /[\u200B-\u200F\u202A-\u202E\u2060-\u2064\uFEFF]|\uDB40[\uDC00-\uDC7F]/g;
+    var rawv = src.value, hidn = (rawv.match(HID) || []).length;
+    var t = rawv.replace(HID, '').trim(), n = nwords(t);
+    var SENS = /[\w.+-]+@[\w-]+\.[\w.-]+|\+?\d[\d\s().-]{8,}\d|\b(?:confidential|NDA|non-disclosure|privileged|internal use only|do not distribute|embargoed?)\b/i;
+    sens = SENS.test(t) || SENS.test(stdText());
     var sv = stdText();
     M = marker(t + sv); MS = marker(t + sv + M);
     var sw = nwords(sv), sm = $('stdmeta');
@@ -819,6 +824,8 @@ function counts(t){
     else if(n < SHORT){ srcmeta.textContent = n + ' words. Very short: a judge needs a few hundred words to say much.'; srcmeta.className = 'srcmeta warn'; }
     else if(n > LONG){ srcmeta.textContent = n + ' words. Long: some free AI tools silently cut long pastes, which would make the scores meaningless. Consider checking one section at a time.'; srcmeta.className = 'srcmeta warn'; }
     else { srcmeta.textContent = n + ' words'; }
+    if(hidn > 0){ srcmeta.textContent += ' | ' + hidn + ' hidden characters (zero-width or invisible) were found and removed before building the prompt'; srcmeta.className = 'srcmeta warn'; }
+    if(sens){ srcmeta.textContent += ' | Possible confidential or personal data (an email, phone number or marker such as NDA). Open buttons are switched off; use Copy.'; srcmeta.className = 'srcmeta warn'; }
     if(n > 0){ var cc = counts(t); srcmeta.textContent += ' | ' + cc.s + ' sentences | ' + cc.dash + ' em dashes | ' + cc.nums + ' numbers'; }
     boxes.forEach(function(b){
       var msg = b.spec.ready(t), p = null;
@@ -829,15 +836,16 @@ function counts(t){
       b.prompt = p || '';
       b.ta.value = p || msg;
       var anyLong = !!p && b.links.length > 0 && (50 + encodeURIComponent(p).length > LINK_MAX);
-      b.count.textContent = p ? (p.length + ' characters' + (anyLong ? '. Too long for an Open link: use Copy.' : '')) : '';
+      b.count.textContent = p ? (p.length + ' characters' + (sens ? '. Open is switched off because possible confidential or personal data was found: use Copy.' : (anyLong ? '. Too long for an Open link: use Copy.' : ''))) : '';
       b.copyBtn.setAttribute('aria-disabled', p ? 'false' : 'true');
       b.copyBtn.disabled = !p;
       b.links.forEach(function(l){
         var url = p ? l.base + encodeURIComponent(p) : '';
         var tooLong = !!p && url.length > LINK_MAX;
-        l.a.setAttribute('data-toolong', tooLong ? '1' : '0');
+        l.a.setAttribute('data-toolong', (tooLong || sens) ? '1' : '0');
+        l.a.setAttribute('data-sens', sens ? '1' : '0');
         l.a.setAttribute('aria-disabled', p ? 'false' : 'true');
-        l.a.href = (p && !tooLong) ? url : '#';
+        l.a.href = (p && !tooLong && !sens) ? url : '#';
         l.a.tabIndex = p ? 0 : -1;
       });
     });
